@@ -11,16 +11,20 @@
       <h1>Will Andy pick me?</h1>
     </header>
     <div class="content-wrap">
-      <form class="question-answer-section">
-        <input type="text" value= "Ask your question here!" onfocus="this.value=''"></input>
-        <button class="answer-btn" type="submit">Get your answer</button>
-        <img class= "eight-ball" src="assets/eight-ball.png" alt="eight ball">
-        <section class= "inserted-text">
-          
-        </section>
-        <button class="clear-btn" type="submit">Clear</button>
-      </form>
+      <section class="favorite-answer hidden">
+        <p class="favorite-answer-title">Favorite Answer</p>
+      </section>
+      <section class="question-answer-section">
+        <input class = "input-text" type="text" value= "Ask your question here!" onfocus="this.value=''"></input>
+        <button disabled class="answer-btn" type="submit">Get your answer</button>
+        <img class="eight-ball" src="assets/eight-ball.png" alt="eight ball">
+        <section class="answer-question">
+      </section>
+        <button class="favorite-btn favorite-btn-disabled hidden" id="favorite" type="submit">Favorite</button>
+        <button disabled class="clear-btn clear-btn-disabled" id="clear" type="submit">Clear</button>
+      </section>
       <img class="woody" src="assets/woody.png" alt="woody">
     </div>
+  <script src="index.js"></script>
   </body>
 </html>
